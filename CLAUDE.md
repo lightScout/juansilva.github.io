@@ -177,12 +177,12 @@ Juan's KMP journey spans personal exploration and professional delivery:
 - **Oct 2022**: Personal KMP study begins. Explores cross-platform architecture (Android, iOS, Web shared codebase)
 - **2022–23**: Personal KMP projects (incl. Mozzy — AI privacy-focused web navigator, unshipped)
 - **Oct 2023 – Jan 2024**: First professional KMP at UsTwo × FT — built shared analytics library
-- **2026**: Shipped Cityscape City Puzzles via Light Scout Ltd — iOS + Android game via KMP, App Store + Google Play live
+- **2026**: Shipped Cityscape City Puzzles via Light Scout — iOS + Android game via KMP, App Store + Google Play live
 
 KMP is highlighted in:
 - `cases/ustwo-ft.html` — analytics library, first professional engagement
-- `cases/cityscape.html` — Light Scout Ltd shipping, cross-platform IAP
-- `about.html` — KMP in stack + narrative context + Light Scout Ltd founding
+- `cases/cityscape.html` — Light Scout shipping, cross-platform IAP
+- `about.html` — KMP in stack + narrative context + Light Scout founding
 
 ## Deployment to GitHub Pages
 
