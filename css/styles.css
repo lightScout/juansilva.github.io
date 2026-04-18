@@ -89,6 +89,7 @@ a { color: inherit; }
 .log .log-row .arrow { font-size: 20px; text-align: right; color: var(--dim); transition: all 0.2s; }
 .log .log-row.current .num { color: var(--accent); }
 .log .log-row.current::after { content: '● LIVE'; position: absolute; right: 60px; font-size: 9px; letter-spacing: 0.14em; color: var(--accent); }
+.log .log-row:last-child { border-bottom: none; }
 
 /* Make log-row work as a grid anchor */
 a.log-row {
