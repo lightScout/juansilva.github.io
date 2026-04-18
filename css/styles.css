@@ -244,6 +244,8 @@ footer .bottom { max-width: 1280px; margin: 48px auto 0; padding-top: 20px; bord
   .log .log-row { grid-template-columns: 40px 1fr 40px; }
   .log .log-row .k, .log .log-row .year { display: none; }
   .log .log-row.current::after { right: 50px; }
+  .shot { aspect-ratio: 4/3; margin-top: 40px; }
+  .shot .corner { font-size: 11px; }
   footer .inner { grid-template-columns: 1fr; }
   section { padding: 48px 16px; }
 }
