@@ -1,0 +1,273 @@
+
+
+<html lang="en"><head>
+<style data-omelette-injected="">html,body{background:transparent}</style><script data-omelette-injected="">(()=>{var W=["https://claude.ai","https://preview.claude.ai","https://eap-omelette.claude.ai"];var Y=30000;document.addEventListener("DOMContentLoaded",()=>{const D="transform-react-jsx-source";document.querySelectorAll('script[type="text/babel"],script[type="text/jsx"]').forEach((C,F)=>{const Q=C.getAttribute("data-plugins")||"";if(Q.indexOf(D)<0){C.setAttribute("data-plugins",Q?`${Q},${D}`:D)}if(!C.hasAttribute("data-filename")){C.setAttribute("data-filename",C.getAttribute("src")||`inline-${F}`)}})});var K=window.parent;if(K&&K!==window){const D=(k,f)=>{try{K.postMessage({__omelette_log:true,type:k,data:f},"*")}catch{}};["log","warn","error"].forEach((k)=>{const f=console[k];console[k]=(...w)=>{const z=w.map((h)=>{try{return typeof h==="object"?JSON.stringify(h):String(h)}catch{try{return String(h)}catch{return"[unstringifiable]"}}}).join(" ");D(k,z);f.apply(console,w)}});window.addEventListener("error",(k)=>{const f=k.target;if(f&&f!==window&&f.tagName){const w=f.src||f.href||"";D("resource_error",`${f.tagName} failed to load: ${w}`)}else{D("error",`${k.message||"Unknown error"} at ${k.filename||"?"}:${k.lineno||0}:${k.colno||0}`)}},true);window.addEventListener("unhandledrejection",(k)=>{const f=k.reason;const w=f instanceof Error?`${f.message} ${f.stack}`:String(f);D("error",`Unhandled rejection: ${w}`)});const C=()=>{try{K.postMessage({type:"omelette:height",height:document.documentElement.scrollHeight},"*")}catch{}};if(document.readyState==="complete")C();else window.addEventListener("load",C);if(window.ResizeObserver)new ResizeObserver(C).observe(document.documentElement);const F={};let Q=0;window.claude={complete(k){return new Promise((f,w)=>{if(!W.length){w(new Error("claude.complete: no parent origin"));return}const z=`c${++Q}`;const h=()=>setTimeout(()=>{delete F[z];w(new Error(`claude.complete: no data for ${Y/1000}s`))},Y);const J=h();F[z]={resolve:f,reject:w,text:"",t:J,arm:h};try{for(const V of W){K.postMessage({__om_api:true,id:z,body:k},V)}}catch(V){clearTimeout(J);delete F[z];w(V)}})}};const X=(k)=>{try{return JSON.stringify(k)}catch{return JSON.stringify(String(k))}};window.addEventListener("message",(k)=>{if(W.indexOf(k.origin)<0)return;if(k.source!==K)return;const f=k.data;if(!f)return;if(f.__om_api_r){const h=F[f.id];if(!h)return;if(f.error!=null){clearTimeout(h.t);delete F[f.id];h.reject(new Error(f.error));return}if(f.chunk!=null){clearTimeout(h.t);h.t=h.arm();h.text+=f.chunk;return}if(f.done){clearTimeout(h.t);delete F[f.id];h.resolve(f.text!=null?f.text:h.text);return}return}if(!f.__om_eval)return;const w=f;const z=(h)=>{k.source.postMessage({...h,__om_eval_r:1,id:w.id},k.origin)};try{const h=(0,eval)(w.code);if(h&&typeof h.then==="function"){h.then((J)=>z({ok:1,v:X(J)}),(J)=>z({ok:0,e:String(J)}))}else{z({ok:1,v:X(h)})}}catch(h){z({ok:0,e:String(h)})}})}})();
+</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juan Silva — Case Log / Direction C</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="chrome">
+  <div class="mark">JUAN SILVA <span class="slash">//</span> CASE LOG</div>
+  <nav class="nav">
+    <a href="#log">Log</a>
+    <a href="about.html">About</a>
+    <a href="cases/sitka.html">08 · Sitka</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="ticker">
+    <span class="live">CURRENT · SITKA</span>
+    <span id="london-time">LONDON · 14:20 GMT</span>
+  </div>
+</header>
+
+<!-- ========================= HERO ========================= -->
+<section class="hero">
+  <div class="inner">
+    <div class="kicker">
+      <span>JUAN SILVA // MOBILE ENGINEER // 2015 — 2026</span>
+      <span class="right">● AVAILABLE FOR SELECT WORK</span>
+    </div>
+    <h1>
+      Ten years<br>
+      shipping <span class="acc">Kotlin</span><br>
+      <span class="serif">for institutions</span><br>
+      <span class="serif">&amp;</span> <span class="acc">human-centred</span> experiences.
+    </h1>
+    <div class="sub">
+      <div><span class="k">Based</span><span class="v">London, UK</span></div>
+      <div><span class="k">Current</span><span class="v acc">Sitka · Lead Android</span></div>
+      <div><span class="k">Stack</span><span class="v">Kotlin · KMP · Compose</span></div>
+      <div><span class="k">Languages</span><span class="v">PT · EN · DE</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= PROJECT HIGHLIGHTS ========================= -->
+<section class="section" id="highlights">
+  <div class="inner">
+    <div class="section-head">
+      <span class="title">// PROJECT HIGHLIGHTS</span>
+    </div>
+
+    <div class="covers">
+      <a href="cases/hsbc.html">
+        <div class="cover">
+          <div class="ctop"><span>05 · HSBC</span><span class="status live">LIVE</span></div>
+          <div class="ccenter">
+            <h3 class="shout">Bank<span class="acc">·</span>ing,<br>re<span class="acc">·</span>wired.</h3>
+            <div class="sub">KOTLIN · 2021 — 2023</div>
+          </div>
+          <div class="cbottom"><span>CASE 05</span><span>→</span></div>
+        </div>
+      </a>
+      <a href="cases/vanguard.html">
+        <div class="cover">
+          <div class="ctop"><span>07 · VANGUARD</span><span>SHIPPED</span></div>
+          <div class="ccenter">
+            <h3 class="shout">Invest<span class="acc">·</span><br><span class="acc">ments.</span></h3>
+            <div class="sub">KOTLIN · COMPOSE · 23—25</div>
+          </div>
+          <div class="cbottom"><span>CASE 07</span><span>→</span></div>
+        </div>
+      </a>
+      <a href="cases/cityscape.html">
+        <div class="cover">
+          <div class="ctop"><span>09 · CITYSCAPE</span><span class="status live">LIVE</span></div>
+          <div class="ccenter">
+            <h3 class="shout">Built<span class="acc">·</span>once<span class="acc">.</span><br>Ship<span class="acc">·</span>ped twice.</h3>
+            <div class="sub">KMP · ANDROID + IOS · 2026</div>
+          </div>
+          <div class="cbottom"><span>CASE 09</span><span>↗</span></div>
+        </div>
+      </a>
+      <a href="cases/sitka.html">
+        <div class="cover">
+          <div class="ctop"><span>08 · SITKA</span><span class="status live">CURRENT</span></div>
+          <div class="ccenter">
+            <h3 class="shout">Lead<span class="acc">·</span>ing<br>the <span class="acc">stack.</span></h3>
+            <div class="sub">LEAD ANDROID · 2025 →</div>
+          </div>
+          <div class="cbottom"><span>CASE 08</span><span>→</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= CASE LOG ========================= -->
+<section class="section" id="log">
+  <div class="inner">
+    <div class="section-head">
+      <span class="title">// CASE LOG <span class="acc">— 09 PROJECTS</span></span>
+      <span>SORTED ↓ RECENT</span>
+    </div>
+
+    <div class="log">
+      <a class="log-row" href="cases/cityscape.html">
+        <span class="num">09</span>
+        <span class="title">Cityscape <span class="serif">City Puzzles</span></span>
+        <span class="k">Founder</span>
+        <span class="k">KMP · IOS · ANDROID</span>
+        <span class="k year">2026</span>
+        <span class="arrow">↗</span>
+      </a>
+      <a class="log-row current" href="cases/sitka.html">
+        <span class="num">08</span>
+        <span class="title">Sitka <span class="serif">— leading from the front.</span></span>
+        <span class="k">LEAD ANDROID</span>
+        <span class="k">KOTLIN · COMPOSE</span>
+        <span class="k year">2025 →</span>
+        <span class="arrow">→</span>
+      </a>
+      <a class="log-row" href="cases/vanguard.html">
+        <span class="num">07</span>
+        <span class="title">Vanguard UK</span>
+        <span class="k">ANDROID ENG</span>
+        <span class="k">KOTLIN · AUTH0</span>
+        <span class="k year">2023–25</span>
+        <span class="arrow">→</span>
+      </a>
+      <a class="log-row" href="cases/ustwo-ft.html">
+        <span class="num">06</span>
+        <span class="title">UsTwo <span class="serif">× Financial Times</span></span>
+        <span class="k">ANDROID ENG</span>
+        <span class="k">KMP · KOTLIN</span>
+        <span class="k year">2023–24</span>
+        <span class="arrow">→</span>
+      </a>
+      <a class="log-row" href="cases/hsbc.html">
+        <span class="num">05</span>
+        <span class="title">HSBC <span class="serif">— First Direct.</span></span>
+        <span class="k">SENIOR ANDROID</span>
+        <span class="k">KOTLIN · MVVM</span>
+        <span class="k year">2021–23</span>
+        <span class="arrow">→</span>
+      </a>
+      <a class="log-row" href="cases/virgin-money.html">
+        <span class="num">04</span>
+        <span class="title">Virgin Money <span class="serif">via Wipro.</span></span>
+        <span class="k">ANDROID DEV</span>
+        <span class="k">JAVA · KOTLIN</span>
+        <span class="k year">2020–21</span>
+        <span class="arrow">→</span>
+      </a>
+      <a class="log-row" href="cases/wipro.html">
+        <span class="num">03</span>
+        <span class="title">Wipro</span>
+        <span class="k">ANDROID DEV</span>
+        <span class="k">JAVA · KOTLIN</span>
+        <span class="k year">2019–20</span>
+        <span class="arrow">→</span>
+      </a>
+      <a class="log-row" href="cases/athlon.html">
+        <span class="num">02</span>
+        <span class="title">Athlon International</span>
+        <span class="k">ANDROID DEV</span>
+        <span class="k">JAVA · ANDROID SDK</span>
+        <span class="k year">2017–18</span>
+        <span class="arrow">→</span>
+      </a>
+      <a class="log-row" href="cases/ding.html">
+        <span class="num">01</span>
+        <span class="title">Ding <span class="serif">— first shipped.</span></span>
+        <span class="k">ANDROID DEV</span>
+        <span class="k">JAVA · ANDROID SDK</span>
+        <span class="k year">2015–17</span>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= FOOTER / CONTACT ========================= -->
+<footer id="contact">
+  <div class="inner">
+    <div class="col big">
+      <h5>// CONTACT</h5>
+      <p class="giant">
+        Got a <span class="acc">hard</span><br>
+        <span class="serif">Kotlin</span> problem?
+      </p>
+      <a class="email" href="mailto:juanmullercs@hotmail.com">juanmullercs@hotmail.com ↗</a>
+    </div>
+    <div class="col">
+      <h5>// Find me</h5>
+      <p>
+        Upwork ↗<br>
+        LinkedIn ↗<br>
+        Lightscout.co.uk ↗<br>
+        GitHub ↗
+      </p>
+    </div>
+    <div class="col">
+      <h5>// Based</h5>
+      <p>
+        London, UK<br>
+        +44 7512 169913<br><br>
+        Available for<br>
+        select contract work.
+      </p>
+    </div>
+  </div>
+  <div class="bottom">
+    <span>JUAN SILVA // CASE LOG // v0.2</span>
+    <span>© 2026 Juan Silva</span>
+  </div>
+</footer>
+
+<script>
+  // Persist slight state — current log row selection could be added later.
+  // For now, just keep the "current" badge in sync with the top of the log.
+</script>
+
+
+
+<div id="give-freely-root-bcjindcccaagfpapjjmafapmmgkkhgoa" class="give-freely-root" data-extension-id="bcjindcccaagfpapjjmafapmmgkkhgoa" data-extension-name="JSON Formatter" style="display: block;"><template shadowrootmode="open"><style>
+  :host {
+    all: initial;
+  }
+
+  .gf-scroll-remove::-webkit-scrollbar {
+    border-radius-bottom-right: 15px;
+  }
+
+  button {
+    cursor: pointer;
+    transition: transform 0.1s ease;
+  }
+
+  button:active {
+    transform: scale(0.98);
+  }
+
+  .give-freely-close-button:hover {
+    opacity: 0.7;
+  }
+
+  input[type="radio"] {
+    margin-right: 8px;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 1em 0;
+  }
+
+  dialog::backdrop  {
+    background-color: revert;
+  }
+
+  dialog.backdrop-hidden::backdrop  {
+    background-color: transparent;
+  }
+</style><div><div class="gf-app"></div></div></template></div><script src="js/clock.js"></script>
+</body></html>
