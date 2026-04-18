@@ -31,7 +31,18 @@ function initTheme() {
   }
 }
 
-// Run when DOM is ready
+// Set initial button text immediately (before DOM ready)
+(function() {
+  const stored = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const isDark = stored ? stored === 'dark' : prefersDark;
+  const toggle = document.getElementById('theme-toggle');
+  if (toggle) {
+    toggle.textContent = isDark ? 'LIGHT' : 'DARK';
+  }
+})();
+
+// Run full initialization when DOM is ready
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initTheme);
 } else {
