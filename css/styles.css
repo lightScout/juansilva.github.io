@@ -211,7 +211,9 @@ footer .bottom { max-width: 1280px; margin: 48px auto 0; padding-top: 20px; bord
   .chrome .ticker { display: none; }
   .chrome .nav { gap: 12px; }
   .hero { padding: 48px 16px 32px; }
-  .hero h1 { font-size: clamp(32px, 8vw, 80px); }
+  .hero .kicker { flex-direction: column; gap: 8px; margin-bottom: 20px; }
+  .hero .kicker .right { margin-top: 4px; }
+  .hero h1 { font-size: clamp(32px, 8vw, 80px; margin: 16px 0; }
   .hero .sub { grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
   .hero .sub .k { font-size: 10px; }
   .detail .meta-strip { grid-template-columns: 1fr 1fr; gap: 14px; }
