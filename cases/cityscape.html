@@ -59,8 +59,8 @@
         <p>Full-cycle ownership: design, development, QA, <span class="serif">App Store + Play Store</span> submissions, and ongoing maintenance across two independent app store ecosystems.</p>
       </div>
       <div>
-        <p><span class="acc">Kotlin Multiplatform</span> throughout. Shared game engine with coroutines for frame updates. Compose Multiplatform for Android UI. SQLDelight for local persistence. In-app purchases via StoreKit2 (iOS) and Billing Library (Android).</p>
-        <p>Solo shipping experience — provisioning, TestFlight, App Store review cycles, Play Store release tracks, and version management across two independent ecosystems.</p>
+        <p><span class="acc">Kotlin Multiplatform</span> throughout. Shared game engine with Coroutines for frame updates and state management. Koin for dependency injection, Kotlinx Serialization for data models. Multiplatform-settings for local persistence, Firebase Firestore for cloud leaderboards and analytics.</p>
+        <p>Cross-platform IAP via RevenueCat abstraction — unified monetization layer for StoreKit2 (iOS) and Billing Library (Android). Custom feature flag repository for A/B testing and gradual rollouts.</p>
       </div>
     </div>
 
@@ -137,12 +137,13 @@
         <h4>// Stack</h4>
         <div class="stack">
           <span class="acc">Kotlin Multiplatform</span>
-          <span class="acc">Compose Multiplatform</span>
-          <span>SQLDelight</span>
-          <span>Ktor</span>
+          <span class="acc">Compose</span>
+          <span>Koin</span>
+          <span>Navigation</span>
           <span>Coroutines</span>
-          <span>StoreKit2</span>
-          <span>Billing Library</span>
+          <span>Firebase</span>
+          <span>RevenueCat</span>
+          <span>multiplatform-settings</span>
         </div>
       </section>
       <section>
