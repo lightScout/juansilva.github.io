@@ -145,13 +145,11 @@ a.log-row {
 
 /* ---------- hero shot ---------- */
 .shot { margin-top: 56px; background: var(--surface-2); aspect-ratio: 16/8; position: relative; overflow: hidden; border: 1px solid var(--rule-2); display: flex; align-items: center; justify-content: center; }
-.shot::before { content: ''; position: absolute; inset: 0; background-image: repeating-linear-gradient(135deg, transparent 0 14px, rgba(255,255,255,0.02) 14px 15px); }
-.shot .ph { position: relative; font-size: 15px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--dim); }
-.shot .corner { position: absolute; font-size: 14px; letter-spacing: 0.14em; color: var(--dim); text-transform: uppercase; }
-.shot .corner.tl { top: 14px; left: 14px; }
-.shot .corner.tr { top: 14px; right: 14px; color: var(--accent); }
-.shot .corner.bl { bottom: 14px; left: 14px; }
-.shot .corner.br { bottom: 14px; right: 14px; }
+.shot::before { content: ''; display: none; }
+.shot .ph { display: none; }
+.shot .corner { display: none; }
+.shot canvas { display: none; }
+.shot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
 /* ---------- stats ---------- */
 .stats { margin-top: 48px; display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px dashed var(--rule); border-bottom: 1px dashed var(--rule); }
