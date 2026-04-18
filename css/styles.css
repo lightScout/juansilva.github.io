@@ -207,7 +207,12 @@ footer .bottom { max-width: 1280px; margin: 48px auto 0; padding-top: 20px; bord
 
 /* mobile */
 @media (max-width: 860px) {
-  .hero .sub { grid-template-columns: 1fr 1fr; gap: 20px; }
+  .chrome { padding: 12px 16px; }
+  .chrome .nav { gap: 12px; }
+  .hero { padding: 48px 16px 32px; }
+  .hero h1 { font-size: clamp(32px, 8vw, 80px); }
+  .hero .sub { grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
+  .hero .sub .k { font-size: 10px; }
   .detail .meta-strip { grid-template-columns: 1fr 1fr; gap: 14px; }
   .detail .body-grid { grid-template-columns: 1fr; }
   .stats { grid-template-columns: 1fr 1fr; }
@@ -220,4 +225,5 @@ footer .bottom { max-width: 1280px; margin: 48px auto 0; padding-top: 20px; bord
   .log .log-row .k, .log .log-row .year { display: none; }
   .log .log-row.current::after { right: 50px; }
   footer .inner { grid-template-columns: 1fr; }
+  section { padding: 48px 16px; }
 }
