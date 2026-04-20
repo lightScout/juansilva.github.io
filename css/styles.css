@@ -47,9 +47,8 @@ a { color: inherit; }
 .chrome .nav { display: flex; gap: 12px; color: var(--muted); align-items: center; }
 .chrome .nav a { text-decoration: none; border: 1px solid var(--rule); padding: 6px 10px; border-radius: 2px; transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease; }
 .chrome .nav a:hover { color: var(--ink); border-color: var(--accent); background-color: rgba(184, 138, 46, 0.05); }
-.chrome .nav .theme-toggle { display: flex; align-items: center; justify-content: center; border: 1px solid var(--rule); padding: 4px; border-radius: 2px; background: transparent; font-size: 14px; cursor: pointer; transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease; color: var(--muted); width: 40px; height: 40px; }
+.chrome .nav .theme-toggle { text-decoration: none; border: 1px solid var(--rule); padding: 6px 10px; border-radius: 2px; background: transparent; font-size: 14px; cursor: pointer; transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease; color: var(--muted); }
 .chrome .nav .theme-toggle:hover { border-color: var(--accent); color: var(--ink); background-color: rgba(184, 138, 46, 0.05); }
-.chrome .nav .theme-toggle svg { width: 24px; height: 24px; display: block; }
 .chrome .ticker { color: var(--muted); display: flex; gap: 14px; }
 .chrome .ticker .live { color: var(--accent); display: flex; align-items: center; gap: 6px; }
 .chrome .ticker .live::before { content: ''; width: 6px; height: 6px; background: var(--accent); border-radius: 50%; animation: pulse 1.5s infinite; }
