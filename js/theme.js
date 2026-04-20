@@ -5,7 +5,7 @@ function initTheme() {
   function updateButtonText() {
     const isLight = html.classList.contains('light');
     if (toggle) {
-      toggle.textContent = isLight ? 'DARK' : 'LIGHT';
+      toggle.textContent = isLight ? '🌙' : '☀️';
     }
   }
 
@@ -38,7 +38,7 @@ function initTheme() {
   const isDark = stored ? stored === 'dark' : prefersDark;
   const toggle = document.getElementById('theme-toggle');
   if (toggle) {
-    toggle.textContent = isDark ? 'LIGHT' : 'DARK';
+    toggle.textContent = isDark ? '☀️' : '🌙';
   }
 })();
 
