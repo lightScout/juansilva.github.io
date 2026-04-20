@@ -137,7 +137,7 @@ a.log-row {
 
 .detail .body-grid { margin-top: 48px; display: grid; grid-template-columns: 180px 1fr 1fr; gap: 32px; }
 .detail .body-grid .lbl { font-size: 15px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); }
-.detail .body-grid p { margin: 0 0 14px; font-size: 14px; line-height: 1.7; font-weight: 300; color: var(--ink-2); }
+.detail .body-grid p { margin: 0 0 14px; font-size: 14px; line-height: 1.7; font-weight: 400; color: var(--ink-2); }
 .detail .body-grid p .acc { color: var(--accent); font-weight: 400; }
 .detail .body-grid p .serif { font-family: 'Instrument Serif'; font-style: italic; color: var(--ink); }
 .detail .body-grid ul { list-style: none; padding: 0; margin: 0; font-size: 20px; line-height: 1.9; font-weight: 300; color: var(--ink-2); }
