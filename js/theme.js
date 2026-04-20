@@ -8,7 +8,9 @@ function initTheme() {
       const icon = isLight ? 'moon' : 'sun';
       fetch(`/icons/${icon}.svg`)
         .then(r => r.text())
-        .then(svg => toggle.innerHTML = svg)
+        .then(svg => {
+          toggle.innerHTML = svg.replace('fill="#e3e3e3"', 'fill="currentColor"');
+        })
         .catch(() => toggle.textContent = isLight ? '🌙' : '☀️');
     }
   }
@@ -45,7 +47,9 @@ function initTheme() {
     const icon = isDark ? 'sun' : 'moon';
     fetch(`/icons/${icon}.svg`)
       .then(r => r.text())
-      .then(svg => toggle.innerHTML = svg)
+      .then(svg => {
+        toggle.innerHTML = svg.replace('fill="#e3e3e3"', 'fill="currentColor"');
+      })
       .catch(() => toggle.textContent = isDark ? '☀️' : '🌙');
   }
 })();
