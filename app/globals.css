@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+:root {
+  --font-jetbrains-mono: var(--font-jetbrains-mono);
+  --font-instrument-serif: var(--font-instrument-serif);
+
+  /* Dark mode (default) */
+  --background: 0 0% 6.3%;
+  --surface: 0 0% 5.5%;
+  --surface-2: 0 0% 7.8%;
+  --border: 0 0% 13.3%;
+  --border-2: 0 0% 16.5%;
+  --foreground: 0 0% 93.3%;
+  --foreground-2: 0 0% 80%;
+  --muted: 0 0% 53.3%;
+  --dim: 0 0% 40%;
+  --accent: 31 87% 63%;
+}
+
+.light {
+  --background: 0 0% 96.1%;
+  --surface: 0 0% 100%;
+  --surface-2: 0 0% 94.1%;
+  --border: 0 0% 86.7%;
+  --border-2: 0 0% 90.6%;
+  --foreground: 0 0% 10.2%;
+  --foreground-2: 0 0% 25.1%;
+  --muted: 0 0% 46.7%;
+  --dim: 0 0% 60%;
+  --accent: 31 87% 63%;
+}
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html,
+  body {
+    @apply m-0 p-0 antialiased;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    text-size-adjust: 100%;
+  }
+
+  body {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 4px 4px;
+  }
+
+  a {
+    @apply text-inherit;
+  }
+}
