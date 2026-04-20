@@ -45,8 +45,10 @@ a { color: inherit; }
 .chrome .mark { color: var(--ink); font-weight: 600; letter-spacing: 0.06em; }
 .chrome .mark .slash { color: var(--accent); }
 .chrome .nav { display: flex; gap: 18px; color: var(--muted); }
-.chrome .nav a { text-decoration: none; border-bottom: 1px solid transparent; padding-bottom: 2px; }
+.chrome .nav a { text-decoration: none; border-bottom: 1px solid var(--rule-2); padding-bottom: 2px; transition: color 0.2s ease, border-bottom-color 0.2s ease; }
 .chrome .nav a:hover { color: var(--ink); border-bottom-color: var(--accent); }
+.chrome .nav .theme-toggle { display: flex; align-items: center; border: 1px solid var(--rule-2); padding: 4px 8px; border-radius: 2px; background: transparent; font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600; cursor: pointer; transition: border-color 0.2s ease, color 0.2s ease; }
+.chrome .nav .theme-toggle:hover { border-color: var(--accent); color: var(--ink); }
 .chrome .ticker { color: var(--muted); display: flex; gap: 14px; }
 .chrome .ticker .live { color: var(--accent); display: flex; align-items: center; gap: 6px; }
 .chrome .ticker .live::before { content: ''; width: 6px; height: 6px; background: var(--accent); border-radius: 50%; animation: pulse 1.5s infinite; }
