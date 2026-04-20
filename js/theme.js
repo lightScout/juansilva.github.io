@@ -2,10 +2,14 @@ function initTheme() {
   const html = document.documentElement;
   const toggle = document.getElementById('theme-toggle');
 
-  function updateButtonText() {
+  function updateButtonIcon() {
     const isLight = html.classList.contains('light');
     if (toggle) {
-      toggle.textContent = isLight ? '🌙' : '☀️';
+      const icon = isLight ? 'moon' : 'sun';
+      fetch(`/icons/${icon}.svg`)
+        .then(r => r.text())
+        .then(svg => toggle.innerHTML = svg)
+        .catch(() => toggle.textContent = isLight ? '🌙' : '☀️');
     }
   }
 
@@ -18,7 +22,7 @@ function initTheme() {
   if (!isDark) {
     html.classList.add('light');
   }
-  updateButtonText();
+  updateButtonIcon();
 
   // Toggle button
   if (toggle) {
@@ -26,19 +30,23 @@ function initTheme() {
       html.classList.toggle('light');
       const isLight = html.classList.contains('light');
       localStorage.setItem('theme', isLight ? 'light' : 'dark');
-      updateButtonText();
+      updateButtonIcon();
     });
   }
 }
 
-// Set initial button text immediately (before DOM ready)
+// Set initial button icon immediately (before DOM ready)
 (function() {
   const stored = localStorage.getItem('theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const isDark = stored ? stored === 'dark' : prefersDark;
   const toggle = document.getElementById('theme-toggle');
   if (toggle) {
-    toggle.textContent = isDark ? '☀️' : '🌙';
+    const icon = isDark ? 'sun' : 'moon';
+    fetch(`/icons/${icon}.svg`)
+      .then(r => r.text())
+      .then(svg => toggle.innerHTML = svg)
+      .catch(() => toggle.textContent = isDark ? '☀️' : '🌙');
   }
 })();
 
