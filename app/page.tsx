@@ -77,8 +77,9 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section className="relative py-20 px-8 border-b border-dashed border-border">
-        <div className="max-w-5xl mx-auto">
+      <section className="relative py-20 px-8 border-b border-dashed border-border overflow-hidden">
+        <GradientBackground />
+        <div className="max-w-5xl mx-auto relative z-10">
           <h1 className="text-7xl font-semibold uppercase leading-tight tracking-tighter mb-12">
             Ten years<br />
             crafting <span className="text-accent">mobile</span>
